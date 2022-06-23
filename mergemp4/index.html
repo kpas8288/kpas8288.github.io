@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		
+		<title>Merge mp4 video and audio</title>
+	</head>
+
+	<body>
+		<div class="block video fileDrop">
+			<h1>Drop mp4 video here</h1>
+			<input type="file" id="video">
+		</div>
+		<div class="block audio fileDrop">
+			<h1>Drop mp4 audio here</h1>
+			<input type="file" id="audio">
+		</div>
+		<form class="block form">
+			<span>File name:</span>
+			<input type="text" name="filename" value="output.mp4">
+			<input type="submit" value="Generate">
+		</form>
+		<div class="block output">
+			<h1>FFmpeg stderr:</h1>
+			<pre id="stderr"></pre>
+		</div>
+		<!--div class="block example">
+			<a href="./video.mp4">Example video</a>
+			<a href="./audio.mp4">Example audio</a>
+		</div-->
+		
+	<script src="/mergemp4/assets/js/index.js"></script></body>
+</html>
